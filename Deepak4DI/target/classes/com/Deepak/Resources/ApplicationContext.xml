@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="com.Deepak.Bean.Address" id="add1">
+    <property name="areaString" value="BhimNagar"/>
+    <property name="cityString" value="Dombivli"/>
+    <property name="stateString" value="Maharashtra"/>
+    
+    </bean>
+    
+    
+    <bean class="com.Deepak.Bean.Student" id="std">
+    
+    <property name="rollno" value="11"/>
+    <property name="nameString" value="Shashank"/>
+    <property name="emailString" value="Shashank@gmail.com"/>
+    <property name="Address" ref="add1"></property>
+    
+    
+    </bean>
+	
+	
+    
+    
+    
+    
+    
+    
+
+</beans>

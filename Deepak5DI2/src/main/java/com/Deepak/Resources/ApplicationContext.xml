@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+  <bean class="com.Deepak.Bean.Address" id="add1">
+    <constructor-arg value="Trimurti Nagar"/>
+    <constructor-arg value="Kalyan"/>
+    <constructor-arg value="Goa"/>
+    
+ </bean>
+  
+  <bean class="com.Deepak.Bean.Student" id="std1">
+  
+  	<constructor-arg value="Anup" index="1"/>
+    <constructor-arg value="110" index="0"/>
+    <constructor-arg ref="add1" index="3"/>
+    <constructor-arg value="Avikala@gmail.com" index="2"/>
+  
+  </bean>
+	
+	
+    
+       </beans>
+    
+    
+    
+    
+

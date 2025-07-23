@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.Deepak.Bean.Address" id="address">
+		<constructor-arg value="Chennai" />
+		<constructor-arg value="Podechaery" />
+		<constructor-arg value="45151" />
+
+
+	</bean>
+
+	<bean class="com.Deepak.Bean.Subject" id="subject">
+		<constructor-arg>
+			<list>
+				<value>Java</value>
+				<value>C</value>
+				<value>C++</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.Deepak.Bean.Student" id="std1"
+		autowire="constructor">
+		<constructor-arg value="121" index="0" />
+		<constructor-arg value="Shasank" index="1" />
+
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- bean definitions here <bean class="com.Deepak.Bean.Address" id="address" 
+		autowire-candidate="false"> <property name="cityString" value="Washim" /> 
+		<property name="stateString" value="Goa" /> <property name="pincode" value="78451" 
+		/> </bean> <bean class="com.Deepak.Bean.Address" id="address1" > <property 
+		name="cityString" value="Washimming" /> <property name="stateString" value="Goaing" 
+		/> <property name="pincode" value="7845112" /> </bean> <bean class="com.Deepak.Bean.Subject" 
+		id="subject" autowire-candidate="default"> <property name="subList"> <list> 
+		<value>Java</value> <value>C</value> <value>C++</value> </list> </property> 
+		</bean> <bean class="com.Deepak.Bean.Student" id="std1" autowire="byName"> 
+		<bean class="com.Deepak.Bean.Address" id="address"> <bean class="com.Deepak.Bean.Subject" 
+		id="subject"> If We Using This ByName Proprty Should Change name as class 
+		Name That time the Work. <bean class="com.Deepak.Bean.Student" id="std1" 
+		autowire="byType"> We Bytype work if that Create bean check .if bean type 
+		present they Work If we Have Two Same Bean But You Want use One That Time 
+		you use autowire-candidate="false" <bean class="com.Deepak.Bean.Student" 
+		id="std1" autowire="constructor"> If we Use Autowire Constructor that should 
+		autowireCOnstructor write -->
+
+
+
+
+	<!-- <bean class="com.Deepak.Bean.Student" id="std1" autowire="byType"> 
+		<property name="roll" value="15"></property> <property name="nameString" 
+		value="Himanshu"></property> </bean> -->
+
+
+
+
+</beans>

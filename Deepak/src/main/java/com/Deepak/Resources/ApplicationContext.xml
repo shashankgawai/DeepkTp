@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="com.Deepak.Bean.Student" id="std">
+    
+    <property name="rollno" value="11"/>
+    <property name="nameString" value="Shashank"/>
+    <property name="emailString" value="Shashank@gmail.com"/>
+    
+    
+    </bean>
+	
+	<bean class="com.Deepak.Bean.Student" id="std1">
+    
+    <property name="rollno" value="12"/>
+    <property name="nameString" value="Amit"/>
+    <property name="emailString" value="Amit@gmail.com"/>
+    
+    
+    </bean>
+    
+    
+    
+    
+    
+    
+
+</beans>
